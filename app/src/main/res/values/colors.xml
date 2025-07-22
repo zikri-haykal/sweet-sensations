@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna asli -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#72C2A9</color>
+
+    <!-- Warna tambahan -->
+    <color name="gray">#6E6E6E</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="blue">#4285F4</color>
+    <color name="green">#009688</color>
+    <color name="red">#FF5722</color>
+
+    <!-- Warna untuk setiap kategori -->
+    <color name="category_buah_lokal">#4CAF50</color>        <!-- Hijau untuk Buah Lokal -->
+    <color name="category_buah_impor">#FF5722</color>        <!-- Oranye untuk Buah Impor -->
+    <color name="category_buah_organik">#8BC34A</color>      <!-- Hijau Muda untuk Buah Organik -->
+    <color name="category_manfaat_buah">#2196F3</color>      <!-- Biru untuk Manfaat Buah -->
+    <color name="category_tips_buah">#9C27B0</color>        <!-- Ungu untuk Tips Membeli Buah -->
+    <color name="apple_red">#FFE53935</color>
+    <color name="apple_light">#FFFFEBEE</color>
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="result_text">@color/apple_red</color>
+</resources>

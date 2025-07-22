@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Relative Layout for the card content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Nama Pengirim -->
+        <TextView
+            android:id="@+id/tv_sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pengirim"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            tools:text="John Doe" />
+
+        <!-- Gambar Postingan -->
+        <ImageView
+            android:id="@+id/iv_post_image"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Caption"
+            android:src="@drawable/alpukat"
+            android:layout_below="@id/tv_sender_name"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Caption Post -->
+        <TextView
+            android:id="@+id/tv_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ini adalah caption dari postingan."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/iv_post_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:text="Ini adalah contoh caption dari sebuah postingan." />
+
+        <!-- Waktu Upload -->
+        <TextView
+            android:id="@+id/tv_upload_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 jam yang lalu"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/tv_caption"
+            android:layout_alignParentStart="true"
+            tools:text="5 menit yang lalu" />
+
+        <!-- Tombol Hapus -->
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_delete"
+            android:contentDescription="Delete Post"
+            app:tint="@android:color/holo_red_dark"
+            android:layout_below="@id/tv_caption"
+            android:layout_alignParentEnd="true" />
+
+        <!-- Tombol Edit -->
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="64dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_edit"
+            android:contentDescription="Edit Post"
+            app:tint="@android:color/holo_blue_dark"
+            android:layout_below="@id/tv_caption"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

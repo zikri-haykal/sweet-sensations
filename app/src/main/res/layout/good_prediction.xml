@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Relative Layout for the card content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:clipToPadding="false">
+
+        <!-- Gambar Apel -->
+        <ImageView
+            android:id="@+id/iv_fruit_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:contentDescription="Gambar Apel"
+            android:src="@drawable/check"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_border" />
+
+        <!-- Nama Apel -->
+        <TextView
+            android:id="@+id/tv_fruit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kualitas Kematangan Apel Anda \nBaik"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#099C16"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/iv_fruit_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="6dp"
+            android:textAlignment="center" />
+
+        <!-- Saran -->
+        <TextView
+            android:id="@+id/tv_fruit_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saran: Konsumsi apel ini segera untuk rasa terbaik!"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:layout_below="@id/tv_fruit_name"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Relative Layout for the card content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Gambar Postingan -->
+        <ImageView
+            android:id="@+id/ivGambarBuah"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Caption"
+            android:src="@drawable/alpukat"
+            android:layout_below="@id/tvNamaBuah"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <!-- Nama Pengirim -->
+        <TextView
+            android:id="@+id/tvNamaBuah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Buah"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:text="Buah Pisang Batu" />
+
+        <!-- Caption Post -->
+        <TextView
+            android:id="@+id/tvHargaBuah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 30.000,00 / Kg"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/ivGambarBuah"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:text="Rp. 30.000,00 / Kg" />
+
+        <!-- Waktu Upload -->
+        <TextView
+            android:id="@+id/tvAsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asal dari Kota Malang"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp"
+            android:layout_below="@id/tvHargaBuah"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

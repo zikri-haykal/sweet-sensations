@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830150185505",
+    "project_id": "sweetsensations-a7719",
+    "storage_bucket": "sweetsensations-a7719.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830150185505:android:741066297d20d4e31c4960",
+        "android_client_info": {
+          "package_name": "com.example.sweetsensations"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFa2GAVocJvVn1_yVlAHLM1_o89bv1yjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

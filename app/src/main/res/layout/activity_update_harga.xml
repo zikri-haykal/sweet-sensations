@@ -1,0 +1,150 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    android:padding="@dimen/card_padding"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/container_padding">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/title_padding">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perbarui Harga Buah"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Nama Buah Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Buah"
+                android:textSize="@dimen/label_text_size"
+                android:layout_marginTop="@dimen/section_margin_top"
+                android:layout_marginBottom="@dimen/section_margin_bottom" />
+
+            <EditText
+                android:id="@+id/et_fruit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan nama buah"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/input_margin_bottom" />
+
+            <!-- Harga Buah Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Buah (per kg)"
+                android:textSize="@dimen/label_text_size"
+                android:layout_marginBottom="@dimen/section_margin_bottom" />
+
+            <EditText
+                android:id="@+id/et_fruit_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan harga per kg"
+                android:inputType="numberDecimal"
+                android:background="@drawable/rounded_edittext"
+                android:padding="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/input_margin_bottom" />
+
+            <!-- Asal Buah Input -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asal Buah"
+                android:textSize="@dimen/label_text_size"
+                android:layout_marginBottom="@dimen/section_margin_bottom" />
+
+            <EditText
+                android:id="@+id/et_fruit_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan asal buah"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/input_margin_bottom" />
+
+            <!-- Upload Image Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gambar Buah"
+                android:textSize="@dimen/label_text_size"
+                android:layout_marginBottom="@dimen/section_margin_bottom" />
+
+            <ImageView
+                android:id="@+id/iv_fruit_image"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:src="@drawable/ic_launcher_foreground"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/image_margin_bottom" />
+
+            <EditText
+                android:id="@+id/linkGambar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan link buah"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/input_margin_bottom" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btn_update_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Harga"
+                android:textStyle="bold"
+                android:backgroundTint="#009587"
+                android:layout_marginTop="@dimen/button_margin_top" />
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/btn_cancel_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:backgroundTint="#81C12020"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

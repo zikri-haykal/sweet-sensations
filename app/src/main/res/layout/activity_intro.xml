@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    Atas Kanan-->
+    <ImageView
+        android:id="@+id/atas_kanan"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/gambar_untuk_pojok_kanan"
+        android:src="@drawable/top_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    Bawah Kiri-->
+    <ImageView
+        android:id="@+id/bawah_kiri"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/gambar_untuk_pojok_kiri"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bottom_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--    Gambar Ilustasi-->
+    <ImageView
+        android:id="@+id/gambar_ilustrasi"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ilustrasi_nobg"
+        android:contentDescription="@string/gambar_untuk_ilustrasi"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atas_kanan" />
+
+<!--    Tulisan Mulai Aplikasi-->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/mulai"
+        app:layout_constraintEnd_toEndOf="@+id/gambar_ilustrasi"
+        app:layout_constraintStart_toStartOf="@+id/gambar_ilustrasi"
+        app:layout_constraintTop_toBottomOf="@+id/gambar_ilustrasi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

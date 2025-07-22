@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SweetSensations"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Masyarakat.Quiz.HasilQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".Masyarakat.Quiz.QuizSatu"
+            android:exported="false" />
+        <activity
+            android:name=".Masyarakat.Prediksi.PrediksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Masyarakat.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.TambahBeritaBuah"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ActivityListKelolaBerita"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.TambahPasarBuah"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ActivityListKelolaPasar"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.TambahHargaBuah"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ActivityListKelolaBuah"
+            android:exported="false" />
+        <activity
+            android:name=".Masyarakat.RiwayatPrediksi.ListRiwayatPrediksi"
+            android:exported="false" />
+        <activity
+            android:name=".Masyarakat.BeritaBuah.ListBeritaBuah"
+            android:exported="false" />
+        <activity
+            android:name=".Masyarakat.PasarBuah.ListPasarBuah"
+            android:exported="false" />
+        <activity android:name=".Admin.AdminActivity" />
+        <activity
+            android:name=".Auth.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Masyarakat.BuahMatang.TambahBuahMatangActivity" />
+        <activity android:name=".Masyarakat.BuahMatang.ListBuahMatangActivity" />
+        <activity android:name=".Masyarakat.BuahMatang.ListPostActivity" /> <!-- <activity android:name=".Auth.LoginActivity" /> -->
+        <activity android:name=".Auth.RegistrationActivity" />
+        <activity android:name=".Masyarakat.LandingpageActivity" />
+        <activity android:name=".Masyarakat.HargaBuah.ListHargaBuah" />
+        <activity android:name=".Masyarakat.Fix.ListUserHarga" />
+        <activity android:name=".Masyarakat.Fix.ListUserBerita" />
+        <activity android:name=".Masyarakat.Fix.ListUserPasar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/fruit_card_background">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvCreatedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:text="Keasaman:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvAcidity"
+                style="@style/FruitPropertyValue"/>
+
+            <TextView
+                android:text="Kerenyahan:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvCrunchiness"
+                style="@style/FruitPropertyValue"/>
+
+            <TextView
+                android:text="Juicy:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvJuiciness"
+                style="@style/FruitPropertyValue"/>
+
+            <TextView
+                android:text="Kematangan:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvRipeness"
+                style="@style/FruitPropertyValue"/>
+            <TextView
+                android:text="Ukuran:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvSize"
+                style="@style/FruitPropertyValue"/>
+            <TextView
+                android:text="Kemanisan:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvSweetness"
+                style="@style/FruitPropertyValue"/>
+            <TextView
+                android:text="Berat:"
+                style="@style/FruitPropertyLabel"/>
+            <TextView
+                android:id="@+id/tvWeight"
+                style="@style/FruitPropertyValue"/>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/result_text"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

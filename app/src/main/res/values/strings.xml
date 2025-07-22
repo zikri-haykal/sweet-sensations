@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SweetSensations</string>
+    <string name="gambar_untuk_pojok_kiri">Gambar untuk Pojok Kiri</string>
+    <string name="gambar_untuk_pojok_kanan">Gambar untuk Pojok Kanan</string>
+    <string name="gambar_untuk_ilustrasi">Gambar untuk Ilustrasi</string>
+    <string name="mulai">Ayo Prediksi Kematangan Buahmu!</string>
+    <string name="button_text_intro">Klik Disini!</string>
+    <!-- Other strings -->
+    <string-array name="nilaispinner">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="kategori_berita">
+        <item>Semua Kategori</item>
+        <item>Buah Lokal</item>
+        <item>Buah Impor</item>
+        <item>Buah Organik</item>
+        <item>Manfaat Buah</item>
+        <item>Tips Membeli Buah</item>
+    </string-array>
+</resources>

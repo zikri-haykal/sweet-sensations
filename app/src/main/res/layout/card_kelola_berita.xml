@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <!-- Tambahkan gradient background -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_gradient_background"
+        android:padding="16dp">
+
+        <!-- Judul Berita dengan shadow effect -->
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Berita"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp"
+            android:shadowColor="#40000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            tools:text="Buah Impor Terbaru di Pasar Lokal" />
+
+        <!-- Kategori dengan background chip -->
+        <TextView
+            android:id="@+id/tv_news_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/category_chip_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_below="@id/tv_news_title"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentStart="true"
+            tools:text="Buah Lokal" />
+
+        <!-- Card untuk gambar dengan rounded corners -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news_category"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/iv_news_image"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="Gambar Berita"
+                android:src="@drawable/alpukat"
+                tools:src="@drawable/ic_launcher_foreground" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Deskripsi dengan styling -->
+        <TextView
+            android:id="@+id/tv_news_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi berita"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/image_card"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:text="Berita ini membahas berbagai buah yang sedang tren di pasaran." />
+
+        <!-- Waktu publikasi dengan icon -->
+        <ImageView
+            android:id="@+id/ic_time"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_time"
+            android:layout_below="@id/tv_news_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/tv_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 jam yang lalu"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_news_description"
+            android:layout_toEndOf="@id/ic_time"
+            tools:text="Dipublikasikan 5 menit yang lalu" />
+
+        <!-- Container untuk button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_publish_time"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Tombol Edit yang lebih menarik -->
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#FF9800"
+                android:textColor="@android:color/white"
+                app:cornerRadius="24dp"
+                android:elevation="4dp"
+                style="@style/Widget.MaterialComponents.Button" />
+
+            <!-- Tombol Delete yang lebih menarik -->
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                app:cornerRadius="24dp"
+                android:elevation="4dp"
+                style="@style/Widget.MaterialComponents.Button" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
