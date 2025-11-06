@@ -39,4 +39,4 @@ Dataset digunakan untuk melatih model KNN terdiri dari fitur-fitur buah apel sep
 
 1. Clone repository ini:
    ```bash
-   git clone https://github.com/username/sweet-sensation.git
+   https://github.com/zikri-haykal/sweet-sensations.git
